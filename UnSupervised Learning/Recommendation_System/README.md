@@ -107,3 +107,11 @@ ___
   * If Lis the frequent item-set (after applying min_sup rule), then each combination of subsets S of | are considered.
   * A Rule is written as — **S ⮕ I-S**
   * The rules which satisfy min_conf are considered as Association Rules.
+# APRIORI PRINCIPLE
+* If an itemset is frequent, then all of its subsets must also be frequent
+* Apriori principle holds due to the following property of the support measure:
+<p align="center">
+  <img src="https://github.com/Naga-kalyan/Machine_Learning/blob/master/UnSupervised%20Learning/Recommendation_System/Img/8.png"/></p>
+
+* Support of an itemset never exceeds the support of its subsets
+* This is known as the **anti-monotone** property of support
