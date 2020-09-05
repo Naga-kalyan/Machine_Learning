@@ -71,21 +71,21 @@
 
 # ACCURACY OF FORECAST
 If <img src="https://render.githubusercontent.com/render/math?math={F_t}">, represents the forecast and <img src="https://render.githubusercontent.com/render/math?math={D_t}">, represents demand for a period <img src="https://render.githubusercontent.com/render/math?math={t}">, then following measures are used to check accuracy of the forecast.
-* The forecast error for the period <img src="https://render.githubusercontent.com/render/math?math={t}"> is given as : 
-<br><img src="https://render.githubusercontent.com/render/math?math={E_t}={F_t - D_t}">
-* Average error over n period is given as : 
-<br><img src="https://render.githubusercontent.com/render/math?math={AE_n}={\frac{1}{n}{\sum_{i=1}^n E_i}}">
-* Another terminology bias is used show the sum of errors :  
-<br><img src="https://render.githubusercontent.com/render/math?math={bias_n}={\sum_{i=1}^n E_i}">
-* As the average error cancels positive and negative errors, in most of the situations, mean absolute deviation error is used:
-<br><img src="https://render.githubusercontent.com/render/math?math={MAD_n}={\sum_{i=1}^n |E_i|}">
-* A measure which is closely related to the MAD, but which expresses the magnitude of the error relative to the magnitude of the demand is known as the mean absolute percentage error, or MAPE.
-<br><img src="https://render.githubusercontent.com/render/math?math={MAPE_n}={\sum_{i=1}^n |\frac{E_i}{D_i}|}">
-* Another measure of average error is known as the mean squared error, or MSE.
-<br><img src="https://render.githubusercontent.com/render/math?math={MSE_n}={\sum_{i=1}^n {E_i}^2}">
+* The forecast error for the period <img src="https://render.githubusercontent.com/render/math?math={t}"> is given as : <img src="https://render.githubusercontent.com/render/math?math={E_t}={F_t - D_t}">
+
+* Average error over n period is given as : <img src="https://render.githubusercontent.com/render/math?math={AE_n}={\frac{1}{n}{\sum_{i=1}^n E_i}}">
+
+* Another terminology bias is used show the sum of errors :  <img src="https://render.githubusercontent.com/render/math?math={bias_n}={\sum_{i=1}^n E_i}">
+
+* As the average error cancels positive and negative errors, in most of the situations, mean absolute deviation error is used:<img src="https://render.githubusercontent.com/render/math?math={MAD_n}={\sum_{i=1}^n |E_i|}">
+
+* A measure which is closely related to the MAD, but which expresses the magnitude of the error relative to the magnitude of the demand is known as the mean absolute percentage error, or MAPE.<img src="https://render.githubusercontent.com/render/math?math={MAPE_n}={\sum_{i=1}^n |\frac{E_i}{D_i}|}">
+
+* Another measure of average error is known as the mean squared error, or MSE.<img src="https://render.githubusercontent.com/render/math?math={MSE_n}={\sum_{i=1}^n {E_i}^2}">
+
 * The square-root of MSE is called as RMSE, and least RMSE is always expected for a better accuracy in forecasting.
-* To automatically detect when a forecast model is no longer producing good forecasts, a measure known as a ***tracking signal*** is often used.
-<br><img src="https://render.githubusercontent.com/render/math?math={Tracking Signal}={\frac{bias}{MAD}}">
+* To automatically detect when a forecast model is no longer producing good forecasts, a measure known as a ***tracking signal*** is often used.<img src="https://render.githubusercontent.com/render/math?math={Tracking Signal}={\frac{bias}{MAD}}">
+
 * This tracking signal is a measure that can be used in a control-chart-like manner so that when an out-of-control state is reached, the forecasting model can be revised to get things back in control.
 * By dividing the bias by the MAD, the control limits for this “unit-less” measure are the same for every product being forecast and therefore separate control limits need not be kept for each product.
 * Instead, a common rule of thumb is **when the tracking signal reaches a value of positive or negative “6”, it is time to investigate the forecasting model**.
